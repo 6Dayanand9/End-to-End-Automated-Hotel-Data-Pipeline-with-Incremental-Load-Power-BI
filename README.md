@@ -26,34 +26,7 @@ A fully automated **data engineering pipeline** that ingests hotel data from ema
   <em>Automated Data Flow with Incremental Ingestion & Incremental Load</em>
 </p>
 
-```mermaid
-flowchart LR
-    A[📩 Outlook Emails] -->|New File Trigger| B[⚙️ Power Automate]
-    B -->|Rule-based Routing| C[📁 Google Drive (Landing Zone)]
-    
-    C -->|Fetch via API| D[🐍 Python ETL]
-    
-    D --> E{🧠 Incremental Ingestion Check}
-    E -->|New File / New Records| F[📥 Staging Layer]
-    E -->|Already Processed| X[⛔ Skip]
-    
-    F --> G[🧹 Data Cleaning & Transformation]
-    
-    G --> H{📊 Incremental Load Logic}
-    H -->|New Records| I[➕ Insert into Fact Table]
-    H -->|Updated Records| J[🔄 Update Dimension Tables]
-    H -->|Duplicate| K[⛔ Reject]
-    
-    I --> L[🗄️ MySQL Data Warehouse]
-    J --> L
-    
-    L --> M[📊 Power BI Desktop]
-    M --> N[☁️ Power BI Service]
-    
-    N --> O[🔐 Row-Level Security (RLS)]
-```
 
----
 
 ## 🔥 Incremental Logic (Core Highlight)
 
