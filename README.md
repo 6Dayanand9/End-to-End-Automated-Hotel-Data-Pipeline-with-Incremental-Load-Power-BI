@@ -15,7 +15,7 @@ A fully automated **data engineering pipeline** that ingests hotel data from ema
 ## ⚡ Detailed Architecture (Incremental Pipeline)
 
 <p align="center">
-  <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" width="700">
+  <img src="[https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif](https://github.com/6Dayanand9/End-to-End-Automated-Hotel-Data-Pipeline-with-Incremental-Load-Power-BI/blob/main/mermaid-diagram.png)" width="700">
 </p>
 
 ```mermaid
