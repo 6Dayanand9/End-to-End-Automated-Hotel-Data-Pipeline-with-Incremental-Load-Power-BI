@@ -27,6 +27,73 @@ A fully automated **data engineering pipeline** that ingests hotel data from ema
 </p>
 
 
+flowchart LR
+
+    %% ---------------------------
+    %% SOURCE LAYER
+    %% ---------------------------
+    A[Outlook Email] 
+    A -->|CSV Attachment| B[Power Automate]
+
+    %% ---------------------------
+    %% INGESTION LAYER
+    %% ---------------------------
+    B -->|Auto Save Files| C[Google Drive - Landing Zone]
+
+    %% ---------------------------
+    %% DATA EXTRACTION
+    %% ---------------------------
+    C -->|API Fetch| D[Python Extraction Script]
+    D -->|File Tracking| D1[processed_files.json]
+
+    %% ---------------------------
+    %% TRANSFORMATION LAYER
+    %% ---------------------------
+    D --> E[Data Cleaning and Transformation]
+    E -->|Cleaned Data| F[Clean Data CSV]
+
+    %% ---------------------------
+    %% LOADING LAYER
+    %% ---------------------------
+    F --> G[Incremental Load Script]
+    G -->|Duplicate Check| G1[loaded_files.json]
+    G --> H[(MySQL Database)]
+
+    %% ---------------------------
+    %% DATA MODELING
+    %% ---------------------------
+    H --> I[Star Schema Model]
+    I --> I1[Fact Table: fact_orders]
+    I --> I2[Dimension Tables]
+
+    %% ---------------------------
+    %% BI LAYER
+    %% ---------------------------
+    H --> J[Power BI Desktop]
+    J -->|Data Modeling and Measures| K[Power BI Dashboard]
+
+    %% ---------------------------
+    %% DEPLOYMENT LAYER
+    %% ---------------------------
+    K --> L[Power BI Service]
+    L -->|Gateway Connection| M[On-Premise Gateway]
+    M -->|Live Connection| H
+
+    %% ---------------------------
+    %% MONITORING
+    %% ---------------------------
+    D --> N[Logging System]
+    E --> N
+    G --> N
+
+    %% ---------------------------
+    %% UI LAYER
+    %% ---------------------------
+    O[Streamlit Dashboard]
+    O -->|Trigger Pipeline| D
+    O --> E
+    O --> G
+
 
 ## 🔥 Incremental Logic (Core Highlight)
 
