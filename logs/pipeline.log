@@ -1,0 +1,1667 @@
+2026-04-27 00:31:03,449 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 00:31:03,677 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 00:31:03,686 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 00:31:03,686 - WARNING - [EXTRACTION] Tracking file not found, starting fresh
+2026-04-27 00:31:07,064 - INFO - [EXTRACTION] Total files fetched: 5
+2026-04-27 00:31:07,065 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 00:31:09,262 - INFO - [EXTRACTION] Processed file: df_2021_05.csv
+2026-04-27 00:31:09,262 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 00:31:11,471 - INFO - [EXTRACTION] Processed file: df_2021_03.csv
+2026-04-27 00:31:11,471 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 00:31:13,501 - INFO - [EXTRACTION] Processed file: df_2021_02.csv
+2026-04-27 00:31:13,501 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 00:31:15,568 - INFO - [EXTRACTION] Processed file: df_2021_01.csv
+2026-04-27 00:31:15,568 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 00:31:18,482 - INFO - [EXTRACTION] Processed file: df_2021_04.csv
+2026-04-27 00:31:18,486 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 00:31:18,720 - INFO - [EXTRACTION] Final shape: (4529, 42)
+2026-04-27 00:31:18,720 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:31:18,725 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 00:31:18,729 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:31:18,868 - INFO - [CLEANING] Raw data loaded successfully. Shape: (4529, 42)
+2026-04-27 00:31:18,911 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 00:31:18,911 - INFO - [CLEANING] Column names cleaned
+2026-04-27 00:31:18,912 - INFO - [CLEANING] Columns renamed
+2026-04-27 00:31:18,966 - INFO - [CLEANING] Duplicates removed: 332
+2026-04-27 00:31:18,971 - INFO - [CLEANING] Date column converted
+2026-04-27 00:31:19,003 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 00:31:19,005 - INFO - [CLEANING] Invalid time rows removed: 763
+2026-04-27 00:31:19,009 - INFO - [CLEANING] Rows filtered (>2hrs removed): 530
+2026-04-27 00:31:19,195 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 00:31:19,272 - INFO - [CLEANING] Final cleaned data shape: (2904, 39)
+2026-04-27 00:31:19,365 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 00:31:19,369 - INFO - [LOADING] Starting data loading process
+2026-04-27 00:31:19,372 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 00:31:19,427 - INFO - [LOADING] Data loaded successfully. Shape: (2904, 39)
+2026-04-27 00:31:19,428 - WARNING - [LOADING] No tracking file found, starting fresh
+2026-04-27 00:31:19,887 - INFO - package: mysql.connector.plugins
+2026-04-27 00:31:19,888 - INFO - plugin_name: caching_sha2_password
+2026-04-27 00:31:19,891 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-04-27 00:31:20,061 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 00:31:21,209 - INFO - [LOADING] Data inserted successfully
+2026-04-27 00:31:21,211 - INFO - [LOADING] Tracking file updated
+2026-04-27 00:31:21,212 - INFO - [LOADING] MySQL connection closed
+2026-04-27 00:31:46,424 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 00:31:46,561 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 00:31:46,567 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 00:31:46,617 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 00:31:48,553 - INFO - [EXTRACTION] Total files fetched: 5
+2026-04-27 00:31:48,555 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 00:31:48,557 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 00:31:48,558 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 00:31:48,563 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 00:31:48,565 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 00:31:48,566 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 00:31:48,568 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 00:31:48,572 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 00:31:48,576 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 00:31:48,577 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 00:31:48,581 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 00:31:48,596 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 00:31:48,606 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:31:48,674 - INFO - [CLEANING] Raw data loaded successfully. Shape: (4529, 42)
+2026-04-27 00:31:48,682 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 00:31:48,683 - INFO - [CLEANING] Column names cleaned
+2026-04-27 00:31:48,684 - INFO - [CLEANING] Columns renamed
+2026-04-27 00:31:48,706 - INFO - [CLEANING] Duplicates removed: 332
+2026-04-27 00:31:48,709 - INFO - [CLEANING] Date column converted
+2026-04-27 00:31:48,726 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 00:31:48,731 - INFO - [CLEANING] Invalid time rows removed: 763
+2026-04-27 00:31:48,735 - INFO - [CLEANING] Rows filtered (>2hrs removed): 530
+2026-04-27 00:31:48,920 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 00:31:48,972 - INFO - [CLEANING] Final cleaned data shape: (2904, 39)
+2026-04-27 00:31:49,052 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 00:31:49,056 - INFO - [LOADING] Starting data loading process
+2026-04-27 00:31:49,058 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 00:31:49,114 - INFO - [LOADING] Data loaded successfully. Shape: (2904, 39)
+2026-04-27 00:31:49,140 - INFO - [LOADING] Tracking file loaded
+2026-04-27 00:31:49,140 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 00:33:32,067 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 00:33:32,591 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 00:33:32,611 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 00:33:32,646 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 00:33:35,551 - INFO - [EXTRACTION] Total files fetched: 10
+2026-04-27 00:33:35,551 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 00:33:38,725 - INFO - [EXTRACTION] Processed file: df_2021_07.csv
+2026-04-27 00:33:38,726 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 00:33:40,584 - INFO - [EXTRACTION] Processed file: df_2021_09.csv
+2026-04-27 00:33:40,585 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 00:33:43,143 - INFO - [EXTRACTION] Processed file: df_2021_08.csv
+2026-04-27 00:33:43,145 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 00:33:43,146 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 00:33:43,148 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 00:33:45,124 - INFO - [EXTRACTION] Processed file: df_2021_06.csv
+2026-04-27 00:33:45,125 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 00:33:47,034 - INFO - [EXTRACTION] Processed file: df_2021_10.csv
+2026-04-27 00:33:47,034 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 00:33:47,035 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 00:33:47,036 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 00:33:47,037 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 00:33:47,037 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 00:33:47,038 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 00:33:47,038 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 00:33:47,039 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 00:33:47,052 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 00:33:47,243 - INFO - [EXTRACTION] Final shape: (5973, 42)
+2026-04-27 00:33:47,243 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:33:47,250 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 00:33:47,255 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:33:47,435 - INFO - [CLEANING] Raw data loaded successfully. Shape: (5973, 42)
+2026-04-27 00:33:47,446 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 00:33:47,449 - INFO - [CLEANING] Column names cleaned
+2026-04-27 00:33:47,458 - INFO - [CLEANING] Columns renamed
+2026-04-27 00:33:47,485 - INFO - [CLEANING] Duplicates removed: 383
+2026-04-27 00:33:47,492 - INFO - [CLEANING] Date column converted
+2026-04-27 00:33:47,513 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 00:33:47,517 - INFO - [CLEANING] Invalid time rows removed: 887
+2026-04-27 00:33:47,523 - INFO - [CLEANING] Rows filtered (>2hrs removed): 566
+2026-04-27 00:33:47,708 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 00:33:47,760 - INFO - [CLEANING] Final cleaned data shape: (4137, 39)
+2026-04-27 00:33:47,863 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 00:33:47,868 - INFO - [LOADING] Starting data loading process
+2026-04-27 00:33:47,872 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 00:33:47,944 - INFO - [LOADING] Data loaded successfully. Shape: (4137, 39)
+2026-04-27 00:33:47,988 - INFO - [LOADING] Tracking file loaded
+2026-04-27 00:33:48,257 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 00:33:49,625 - INFO - [LOADING] Data inserted successfully
+2026-04-27 00:33:49,629 - INFO - [LOADING] Tracking file updated
+2026-04-27 00:33:49,633 - INFO - [LOADING] MySQL connection closed
+2026-04-27 00:36:14,537 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 00:36:14,686 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 00:36:14,697 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 00:36:14,762 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 00:36:18,066 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 00:36:18,067 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 00:36:20,188 - INFO - [EXTRACTION] Processed file: df_2025_12.csv
+2026-04-27 00:36:20,189 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 00:36:22,383 - INFO - [EXTRACTION] Processed file: df_2025_01.csv
+2026-04-27 00:36:22,384 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 00:36:24,568 - INFO - [EXTRACTION] Processed file: df_2025_06.csv
+2026-04-27 00:36:24,569 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 00:36:26,818 - INFO - [EXTRACTION] Processed file: df_2024_11.csv
+2026-04-27 00:36:26,819 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 00:36:29,084 - INFO - [EXTRACTION] Processed file: df_2024_08.csv
+2026-04-27 00:36:29,085 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 00:36:31,340 - INFO - [EXTRACTION] Processed file: df_2025_04.csv
+2026-04-27 00:36:31,340 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 00:36:33,490 - INFO - [EXTRACTION] Processed file: df_2025_07.csv
+2026-04-27 00:36:33,492 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 00:36:35,567 - INFO - [EXTRACTION] Processed file: df_2025_10.csv
+2026-04-27 00:36:35,567 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 00:36:37,767 - INFO - [EXTRACTION] Processed file: df_2024_12.csv
+2026-04-27 00:36:37,768 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 00:36:40,114 - INFO - [EXTRACTION] Processed file: df_2025_09.csv
+2026-04-27 00:36:40,115 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 00:36:42,206 - INFO - [EXTRACTION] Processed file: df_2025_08.csv
+2026-04-27 00:36:42,207 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 00:36:44,456 - INFO - [EXTRACTION] Processed file: df_2025_03.csv
+2026-04-27 00:36:44,457 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 00:36:46,789 - INFO - [EXTRACTION] Processed file: df_2025_05.csv
+2026-04-27 00:36:46,790 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 00:36:50,035 - INFO - [EXTRACTION] Processed file: df_2024_10.csv
+2026-04-27 00:36:50,036 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 00:36:52,106 - INFO - [EXTRACTION] Processed file: df_2024_09.csv
+2026-04-27 00:36:52,107 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 00:36:54,317 - INFO - [EXTRACTION] Processed file: df_2025_02.csv
+2026-04-27 00:36:54,318 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 00:36:56,665 - INFO - [EXTRACTION] Processed file: df_2024_07.csv
+2026-04-27 00:36:56,665 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 00:36:58,729 - INFO - [EXTRACTION] Processed file: df_2025_11.csv
+2026-04-27 00:36:58,731 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 00:37:01,205 - INFO - [EXTRACTION] Processed file: df_2024_06.csv
+2026-04-27 00:37:01,205 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 00:37:03,366 - INFO - [EXTRACTION] Processed file: df_2023_08.csv
+2026-04-27 00:37:03,366 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 00:37:05,626 - INFO - [EXTRACTION] Processed file: df_2024_03.csv
+2026-04-27 00:37:05,627 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 00:37:07,787 - INFO - [EXTRACTION] Processed file: df_2023_11.csv
+2026-04-27 00:37:07,787 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 00:37:10,066 - INFO - [EXTRACTION] Processed file: df_2024_02.csv
+2026-04-27 00:37:10,067 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 00:37:12,325 - INFO - [EXTRACTION] Processed file: df_2023_04.csv
+2026-04-27 00:37:12,325 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 00:37:14,453 - INFO - [EXTRACTION] Processed file: df_2023_02.csv
+2026-04-27 00:37:14,453 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 00:37:16,683 - INFO - [EXTRACTION] Processed file: df_2024_04.csv
+2026-04-27 00:37:16,684 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 00:37:18,876 - INFO - [EXTRACTION] Processed file: df_2023_10.csv
+2026-04-27 00:37:18,876 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 00:37:21,054 - INFO - [EXTRACTION] Processed file: df_2023_09.csv
+2026-04-27 00:37:21,055 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 00:37:23,178 - INFO - [EXTRACTION] Processed file: df_2023_12.csv
+2026-04-27 00:37:23,179 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 00:37:25,456 - INFO - [EXTRACTION] Processed file: df_2023_05.csv
+2026-04-27 00:37:25,457 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 00:37:27,691 - INFO - [EXTRACTION] Processed file: df_2023_06.csv
+2026-04-27 00:37:27,692 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 00:37:29,878 - INFO - [EXTRACTION] Processed file: df_2024_01.csv
+2026-04-27 00:37:29,879 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 00:37:32,486 - INFO - [EXTRACTION] Processed file: df_2024_05.csv
+2026-04-27 00:37:32,488 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 00:37:34,696 - INFO - [EXTRACTION] Processed file: df_2023_07.csv
+2026-04-27 00:37:34,697 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 00:37:36,844 - INFO - [EXTRACTION] Processed file: df_2023_03.csv
+2026-04-27 00:37:36,845 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 00:37:36,846 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 00:37:36,846 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 00:37:39,016 - INFO - [EXTRACTION] Processed file: df_2022_11.csv
+2026-04-27 00:37:39,017 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 00:37:41,171 - INFO - [EXTRACTION] Processed file: df_2022_05.csv
+2026-04-27 00:37:41,172 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 00:37:43,604 - INFO - [EXTRACTION] Processed file: df_2022_03.csv
+2026-04-27 00:37:43,605 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 00:37:45,383 - INFO - [EXTRACTION] Processed file: df_2021_12.csv
+2026-04-27 00:37:45,384 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 00:37:47,314 - INFO - [EXTRACTION] Processed file: df_2022_01.csv
+2026-04-27 00:37:47,315 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 00:37:49,468 - INFO - [EXTRACTION] Processed file: df_2022_12.csv
+2026-04-27 00:37:49,469 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 00:37:51,601 - INFO - [EXTRACTION] Processed file: df_2022_08.csv
+2026-04-27 00:37:51,602 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 00:37:51,602 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 00:37:51,603 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 00:37:53,713 - INFO - [EXTRACTION] Processed file: df_2022_06.csv
+2026-04-27 00:37:53,715 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 00:37:55,698 - INFO - [EXTRACTION] Processed file: df_2022_02.csv
+2026-04-27 00:37:55,699 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 00:37:57,548 - INFO - [EXTRACTION] Processed file: df_2021_11.csv
+2026-04-27 00:37:57,549 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 00:37:59,750 - INFO - [EXTRACTION] Processed file: df_2022_04.csv
+2026-04-27 00:37:59,751 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 00:37:59,751 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 00:37:59,752 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 00:38:02,027 - INFO - [EXTRACTION] Processed file: df_2022_10.csv
+2026-04-27 00:38:02,028 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 00:38:02,028 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 00:38:02,029 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 00:38:02,030 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 00:38:02,031 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 00:38:04,182 - INFO - [EXTRACTION] Processed file: df_2022_09.csv
+2026-04-27 00:38:04,183 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 00:38:04,183 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 00:38:04,184 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 00:38:06,251 - INFO - [EXTRACTION] Processed file: df_2023_01.csv
+2026-04-27 00:38:06,252 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 00:38:09,552 - INFO - [EXTRACTION] Processed file: df_2022_07.csv
+2026-04-27 00:38:09,553 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 00:38:09,553 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 00:38:09,554 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 00:38:09,554 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 00:38:09,554 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 00:38:09,555 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 00:38:09,555 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 00:38:09,556 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 00:38:09,581 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 00:38:11,131 - INFO - [EXTRACTION] Final shape: (66377, 42)
+2026-04-27 00:38:11,131 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:38:11,146 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 00:38:11,158 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:38:11,788 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 00:38:11,852 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 00:38:11,853 - INFO - [CLEANING] Column names cleaned
+2026-04-27 00:38:11,854 - INFO - [CLEANING] Columns renamed
+2026-04-27 00:38:12,108 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 00:38:12,124 - INFO - [CLEANING] Date column converted
+2026-04-27 00:38:12,322 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 00:38:12,350 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 00:38:12,377 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 00:38:14,761 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 00:38:15,346 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 00:38:16,928 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 00:38:16,937 - INFO - [LOADING] Starting data loading process
+2026-04-27 00:38:16,948 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 00:38:17,359 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 00:38:17,443 - INFO - [LOADING] Tracking file loaded
+2026-04-27 00:38:17,552 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 00:38:51,359 - INFO - [LOADING] Data inserted successfully
+2026-04-27 00:38:51,362 - INFO - [LOADING] Tracking file updated
+2026-04-27 00:38:51,364 - INFO - [LOADING] MySQL connection closed
+2026-04-27 00:40:01,037 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 00:40:01,623 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 00:40:01,638 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 00:40:01,713 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 00:40:05,818 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 00:40:05,819 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 00:40:05,819 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 00:40:05,819 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 00:40:05,820 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 00:40:05,820 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 00:40:05,821 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 00:40:05,821 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 00:40:05,821 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 00:40:05,822 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 00:40:05,822 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 00:40:05,823 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 00:40:05,823 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 00:40:05,824 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 00:40:05,824 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 00:40:05,824 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 00:40:05,825 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 00:40:05,826 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 00:40:05,826 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 00:40:05,827 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 00:40:05,827 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 00:40:05,828 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 00:40:05,828 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 00:40:05,829 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 00:40:05,829 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 00:40:05,830 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 00:40:05,830 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 00:40:05,830 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 00:40:05,831 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 00:40:05,831 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 00:40:05,831 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 00:40:05,832 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 00:40:05,834 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 00:40:05,835 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 00:40:05,835 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 00:40:05,836 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 00:40:05,836 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 00:40:05,837 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 00:40:05,838 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 00:40:05,838 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 00:40:05,839 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 00:40:05,839 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 00:40:05,840 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 00:40:05,840 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 00:40:05,841 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 00:40:05,842 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 00:40:05,842 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 00:40:05,845 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 00:40:05,846 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 00:40:05,847 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 00:40:05,851 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 00:40:05,852 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 00:40:05,852 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 00:40:05,853 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 00:40:05,854 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 00:40:05,854 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 00:40:05,855 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 00:40:05,855 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 00:40:05,855 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 00:40:05,856 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 00:40:05,856 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 00:40:05,858 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 00:40:05,858 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 00:40:05,861 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 00:40:05,862 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 00:40:05,862 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 00:40:05,863 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 00:40:05,865 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 00:40:05,866 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 00:40:05,866 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 00:40:05,867 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 00:40:05,867 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 00:40:05,868 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 00:40:05,869 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 00:40:05,869 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 00:40:05,869 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 00:40:05,870 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 00:40:05,870 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 00:40:05,871 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 00:40:05,871 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 00:40:05,872 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 00:40:05,872 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 00:40:05,872 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 00:40:05,872 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 00:40:05,872 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 00:40:05,875 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 00:40:05,876 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 00:40:05,877 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 00:40:05,877 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 00:40:05,877 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 00:40:05,878 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 00:40:05,880 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 00:40:05,881 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 00:40:05,881 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 00:40:05,882 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 00:40:05,882 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 00:40:05,883 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 00:40:05,883 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 00:40:05,884 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 00:40:05,885 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 00:40:05,885 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 00:40:05,886 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 00:40:05,886 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 00:40:05,887 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 00:40:05,887 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 00:40:05,889 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 00:40:05,891 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 00:40:05,892 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 00:40:05,893 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 00:40:05,893 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 00:40:05,894 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 00:40:05,894 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 00:40:05,895 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 00:40:05,896 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 00:40:05,897 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 00:40:05,898 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 00:40:05,900 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 00:40:05,901 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 00:40:05,902 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 00:40:05,903 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 00:40:05,904 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 00:40:05,904 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 00:40:05,907 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 00:40:05,918 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 00:40:06,671 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 00:40:06,786 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 00:40:06,787 - INFO - [CLEANING] Column names cleaned
+2026-04-27 00:40:06,791 - INFO - [CLEANING] Columns renamed
+2026-04-27 00:40:07,161 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 00:40:07,279 - INFO - [CLEANING] Date column converted
+2026-04-27 00:40:07,532 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 00:40:07,567 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 00:40:07,601 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 00:40:10,116 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 00:40:10,917 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 00:40:12,440 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 00:40:12,449 - INFO - [LOADING] Starting data loading process
+2026-04-27 00:40:12,453 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 00:40:12,799 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 00:40:12,852 - INFO - [LOADING] Tracking file loaded
+2026-04-27 00:40:12,852 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:16:02,979 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:16:03,284 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:16:03,310 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:16:03,357 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:16:05,621 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:16:05,638 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:16:05,639 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:16:05,641 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:16:05,642 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:16:05,644 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:16:05,645 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:16:05,646 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:16:05,651 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:16:05,653 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:16:05,654 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:16:05,657 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:16:05,657 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:16:05,661 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:16:05,661 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:16:05,662 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:16:05,662 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:16:05,663 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:16:05,664 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:16:05,664 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:16:05,665 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:16:05,666 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:16:05,667 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:16:05,685 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:16:05,688 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:16:05,689 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:16:05,690 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:16:05,690 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:16:05,691 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:16:05,692 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:16:05,693 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:16:05,696 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:16:05,697 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:16:05,697 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:16:05,698 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:16:05,698 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:16:05,701 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:16:05,703 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:16:05,703 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:16:05,706 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:16:05,707 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:16:05,721 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:16:05,723 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:16:05,724 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:16:05,724 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:16:05,724 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:16:05,725 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:16:05,725 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:16:05,731 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:16:05,733 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:16:05,734 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:16:05,738 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:16:05,740 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:16:05,741 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:16:05,742 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:16:05,742 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:16:05,743 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:16:05,744 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:16:05,744 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:16:05,744 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:16:05,745 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:16:05,746 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:16:05,749 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:16:05,751 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:16:05,767 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:16:05,784 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:16:05,787 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:16:05,788 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:16:05,789 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:16:05,792 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:16:05,795 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:16:05,796 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:16:05,796 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:16:05,797 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:16:05,798 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:16:05,800 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:16:05,802 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:16:05,803 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:16:05,804 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:16:05,807 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:16:05,812 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:16:06,562 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:16:06,639 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:16:06,639 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:16:06,639 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:16:06,923 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:16:06,960 - INFO - [CLEANING] Date column converted
+2026-04-27 12:16:07,155 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:16:07,174 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:16:07,184 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:16:09,699 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:16:10,345 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:16:11,740 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:16:11,748 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:16:11,754 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:16:12,166 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:16:12,206 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:16:12,206 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:16:35,649 - INFO - package: mysql.connector.plugins
+2026-04-27 12:16:35,649 - INFO - plugin_name: caching_sha2_password
+2026-04-27 12:16:35,649 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-04-27 12:16:36,599 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:16:36,599 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:16:36,942 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:16:36,942 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:16:36,942 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:21:32,106 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:21:32,411 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:21:32,544 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:21:32,649 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:21:35,336 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:21:35,337 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:21:35,337 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:21:35,337 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:21:35,338 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:21:35,338 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:21:35,339 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:21:35,344 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:21:35,345 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:21:35,345 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:21:35,347 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:21:35,355 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:21:35,355 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:21:35,356 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:21:35,356 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:21:35,357 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:21:35,357 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:21:35,358 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:21:35,361 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:21:35,363 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:21:35,363 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:21:35,364 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:21:35,364 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:21:35,366 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:21:35,366 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:21:35,367 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:21:35,367 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:21:35,368 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:21:35,368 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:21:35,386 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:21:35,391 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:21:35,394 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:21:35,396 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:21:35,398 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:21:35,402 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:21:35,403 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:21:35,404 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:21:35,407 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:21:35,411 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:21:35,416 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:21:35,419 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:21:35,419 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:21:35,420 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:21:35,420 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:21:35,421 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:21:35,433 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:21:35,435 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:21:35,435 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:21:35,436 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:21:35,440 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:21:35,452 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:21:35,452 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:21:35,453 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:21:35,453 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:21:35,454 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:21:35,454 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:21:35,456 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:21:35,457 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:21:35,461 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:21:35,461 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:21:35,465 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:21:35,467 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:21:35,468 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:21:35,468 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:21:35,469 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:21:35,469 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:21:35,469 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:21:35,470 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:21:35,471 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:21:35,471 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:21:35,474 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:21:35,475 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:21:35,478 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:21:35,479 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:21:35,481 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:21:35,483 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:21:35,483 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:21:35,486 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:21:35,491 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:21:35,501 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:21:35,503 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:21:35,503 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:21:35,505 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:21:35,506 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:21:35,515 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:21:35,516 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:21:35,516 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:21:35,517 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:21:35,519 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:21:35,522 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:21:35,523 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:21:35,525 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:21:35,534 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:21:35,534 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:21:35,535 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:21:35,536 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:21:35,537 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:21:35,539 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:21:35,539 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:21:35,539 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:21:35,548 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:21:35,549 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:21:35,550 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:21:35,552 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:21:35,553 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:21:35,553 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:21:35,554 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:21:35,554 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:21:35,555 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:21:35,556 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:21:35,556 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:21:35,557 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:21:35,558 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:21:35,560 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:21:35,568 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:21:35,574 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:21:36,792 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:21:36,893 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:21:36,893 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:21:36,893 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:21:37,178 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:21:37,235 - INFO - [CLEANING] Date column converted
+2026-04-27 12:21:37,488 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:21:37,492 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:21:37,526 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:21:39,986 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:21:40,592 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:21:42,041 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:21:42,064 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:21:42,066 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:21:42,892 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:21:42,926 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:21:42,926 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:22:02,026 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:22:02,223 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:22:02,248 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:22:02,272 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:22:04,391 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:22:04,392 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:22:04,392 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:22:04,393 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:22:04,394 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:22:04,394 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:22:04,395 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:22:04,396 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:22:04,396 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:22:04,398 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:22:04,400 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:22:04,401 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:22:04,405 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:22:04,408 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:22:04,411 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:22:04,414 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:22:04,414 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:22:04,415 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:22:04,416 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:22:04,417 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:22:04,417 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:22:04,418 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:22:04,418 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:22:04,419 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:22:04,425 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:22:04,426 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:22:04,427 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:22:04,428 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:22:04,428 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:22:04,432 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:22:04,432 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:22:04,434 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:22:04,435 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:22:04,435 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:22:04,436 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:22:04,436 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:22:04,437 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:22:04,441 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:22:04,444 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:22:04,450 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:22:04,450 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:22:04,451 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:22:04,451 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:22:04,452 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:22:04,452 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:22:04,453 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:22:04,455 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:22:04,455 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:22:04,456 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:22:04,457 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:22:04,458 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:22:04,460 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:22:04,462 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:22:04,470 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:22:04,472 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:22:04,474 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:22:04,477 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:22:04,477 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:22:04,480 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:22:04,481 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:22:04,481 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:22:04,482 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:22:04,490 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:22:04,491 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:22:04,491 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:22:04,493 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:22:04,506 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:22:04,507 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:22:04,507 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:22:06,366 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:22:06,376 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:22:07,126 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:22:07,179 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:22:07,181 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:22:07,182 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:22:07,473 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:22:07,510 - INFO - [CLEANING] Date column converted
+2026-04-27 12:22:07,807 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:22:07,839 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:22:07,868 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:22:10,340 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:22:10,935 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:22:12,340 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:22:13,839 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:22:13,904 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:22:14,424 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:22:14,426 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:22:14,427 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:23:32,068 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:23:32,215 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:23:32,239 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:23:32,241 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:23:34,697 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:23:34,714 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:23:34,715 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:23:34,716 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:23:34,718 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:23:34,734 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:23:34,735 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:23:34,738 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:23:34,752 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:23:34,763 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:23:34,763 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:23:34,764 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:23:34,764 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:23:34,764 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:23:34,767 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:23:34,768 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:23:34,770 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:23:34,772 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:23:34,773 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:23:34,774 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:23:34,774 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:23:34,775 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:23:34,776 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:23:34,777 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:23:34,778 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:23:34,778 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:23:34,779 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:23:34,779 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:23:34,781 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:23:34,781 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:23:34,782 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:23:34,782 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:23:34,784 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:23:34,787 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:23:34,787 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:23:34,788 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:23:34,789 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:23:34,790 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:23:34,790 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:23:34,791 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:23:34,792 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:23:34,798 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:23:34,798 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:23:34,799 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:23:34,799 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:23:34,800 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:23:34,801 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:23:34,801 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:23:34,805 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:23:34,806 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:23:34,806 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:23:34,806 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:23:34,807 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:23:34,807 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:23:34,808 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:23:34,808 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:23:34,808 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:23:34,809 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:23:34,815 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:23:34,816 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:23:34,817 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:23:34,820 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:23:34,821 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:23:34,822 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:23:34,822 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:23:34,823 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:23:34,823 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:23:34,824 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:23:34,827 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:23:34,828 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:23:34,829 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:23:34,830 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:23:34,831 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:23:34,831 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:23:34,837 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:23:34,840 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:23:35,338 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:23:35,370 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:23:35,371 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:23:35,372 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:23:35,601 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:23:35,601 - INFO - [CLEANING] Date column converted
+2026-04-27 12:23:35,817 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:23:35,840 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:23:35,865 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:23:37,844 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:23:38,380 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:23:39,515 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:23:39,533 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:23:39,536 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:23:39,867 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:23:39,867 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:23:39,867 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:29:41,512 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:29:41,806 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:29:41,817 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:29:41,820 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:29:44,027 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:29:44,042 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:29:44,042 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:29:44,045 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:29:44,048 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:29:44,049 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:29:44,058 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:29:44,059 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:29:44,059 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:29:44,064 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:29:44,064 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:29:44,065 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:29:44,065 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:29:44,066 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:29:44,066 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:29:44,067 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:29:44,067 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:29:44,067 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:29:44,072 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:29:44,072 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:29:44,075 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:29:44,080 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:29:44,081 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:29:44,082 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:29:44,083 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:29:44,083 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:29:44,084 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:29:44,085 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:29:44,085 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:29:44,088 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:29:44,088 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:29:44,090 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:29:44,095 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:29:44,095 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:29:44,096 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:29:44,096 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:29:44,097 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:29:44,097 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:29:44,097 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:29:44,098 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:29:44,098 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:29:44,099 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:29:44,099 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:29:44,100 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:29:44,100 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:29:44,100 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:29:44,103 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:29:44,104 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:29:44,104 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:29:44,105 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:29:44,106 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:29:44,107 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:29:44,112 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:29:44,112 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:29:44,113 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:29:44,113 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:29:44,114 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:29:44,114 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:29:44,115 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:29:44,115 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:29:44,116 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:29:44,116 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:29:44,116 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:29:44,117 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:29:44,121 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:29:44,126 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:29:44,126 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:29:44,126 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:29:44,126 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:29:44,132 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:29:44,132 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:29:44,138 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:29:44,140 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:29:44,142 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:29:44,143 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:29:44,144 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:29:44,145 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:29:44,146 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:29:44,147 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:29:44,147 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:29:44,147 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:29:44,148 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:29:44,148 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:29:44,149 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:29:44,149 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:29:44,149 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:29:44,150 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:29:44,150 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:29:44,152 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:29:44,152 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:29:44,153 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:29:44,154 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:29:44,156 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:29:44,157 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:29:44,160 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:29:44,162 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:29:44,162 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:29:44,163 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:29:44,163 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:29:44,164 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:29:44,165 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:29:44,166 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:29:44,166 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:29:44,166 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:29:44,170 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:29:44,173 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:29:44,852 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:29:44,875 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:29:44,875 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:29:44,875 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:29:45,094 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:29:45,105 - INFO - [CLEANING] Date column converted
+2026-04-27 12:29:45,398 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:29:45,402 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:29:45,424 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:29:47,527 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:29:48,074 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:29:49,434 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:29:49,449 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:29:49,465 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:29:49,958 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:29:49,996 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:29:49,996 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 12:31:55,008 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 12:31:55,132 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 12:31:55,140 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 12:31:55,142 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 12:31:57,256 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 12:31:57,256 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 12:31:57,257 - INFO - [EXTRACTION] Skipped already processed: df_2025_12.csv
+2026-04-27 12:31:57,257 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 12:31:57,259 - INFO - [EXTRACTION] Skipped already processed: df_2025_01.csv
+2026-04-27 12:31:57,259 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 12:31:57,259 - INFO - [EXTRACTION] Skipped already processed: df_2025_06.csv
+2026-04-27 12:31:57,260 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 12:31:57,260 - INFO - [EXTRACTION] Skipped already processed: df_2024_11.csv
+2026-04-27 12:31:57,261 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 12:31:57,261 - INFO - [EXTRACTION] Skipped already processed: df_2024_08.csv
+2026-04-27 12:31:57,261 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 12:31:57,262 - INFO - [EXTRACTION] Skipped already processed: df_2025_04.csv
+2026-04-27 12:31:57,265 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 12:31:57,265 - INFO - [EXTRACTION] Skipped already processed: df_2025_07.csv
+2026-04-27 12:31:57,266 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 12:31:57,268 - INFO - [EXTRACTION] Skipped already processed: df_2025_10.csv
+2026-04-27 12:31:57,269 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 12:31:57,270 - INFO - [EXTRACTION] Skipped already processed: df_2024_12.csv
+2026-04-27 12:31:57,271 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 12:31:57,272 - INFO - [EXTRACTION] Skipped already processed: df_2025_09.csv
+2026-04-27 12:31:57,272 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 12:31:57,273 - INFO - [EXTRACTION] Skipped already processed: df_2025_08.csv
+2026-04-27 12:31:57,273 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 12:31:57,273 - INFO - [EXTRACTION] Skipped already processed: df_2025_03.csv
+2026-04-27 12:31:57,274 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 12:31:57,274 - INFO - [EXTRACTION] Skipped already processed: df_2025_05.csv
+2026-04-27 12:31:57,275 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 12:31:57,275 - INFO - [EXTRACTION] Skipped already processed: df_2024_10.csv
+2026-04-27 12:31:57,278 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 12:31:57,280 - INFO - [EXTRACTION] Skipped already processed: df_2024_09.csv
+2026-04-27 12:31:57,281 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 12:31:57,282 - INFO - [EXTRACTION] Skipped already processed: df_2025_02.csv
+2026-04-27 12:31:57,285 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 12:31:57,285 - INFO - [EXTRACTION] Skipped already processed: df_2024_07.csv
+2026-04-27 12:31:57,286 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 12:31:57,287 - INFO - [EXTRACTION] Skipped already processed: df_2025_11.csv
+2026-04-27 12:31:57,288 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 12:31:57,288 - INFO - [EXTRACTION] Skipped already processed: df_2024_06.csv
+2026-04-27 12:31:57,289 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 12:31:57,289 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 12:31:57,290 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 12:31:57,290 - INFO - [EXTRACTION] Skipped already processed: df_2024_03.csv
+2026-04-27 12:31:57,291 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 12:31:57,292 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 12:31:57,294 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 12:31:57,295 - INFO - [EXTRACTION] Skipped already processed: df_2024_02.csv
+2026-04-27 12:31:57,296 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 12:31:57,298 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 12:31:57,302 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 12:31:57,302 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 12:31:57,303 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 12:31:57,304 - INFO - [EXTRACTION] Skipped already processed: df_2024_04.csv
+2026-04-27 12:31:57,304 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 12:31:57,305 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 12:31:57,305 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 12:31:57,306 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 12:31:57,306 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 12:31:57,306 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 12:31:57,306 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 12:31:57,311 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 12:31:57,311 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 12:31:57,311 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 12:31:57,312 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 12:31:57,312 - INFO - [EXTRACTION] Skipped already processed: df_2024_01.csv
+2026-04-27 12:31:57,313 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 12:31:57,314 - INFO - [EXTRACTION] Skipped already processed: df_2024_05.csv
+2026-04-27 12:31:57,316 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 12:31:57,319 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 12:31:57,319 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 12:31:57,320 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 12:31:57,320 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 12:31:57,320 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 12:31:57,321 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 12:31:57,321 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 12:31:57,321 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 12:31:57,322 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 12:31:57,322 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 12:31:57,322 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 12:31:57,323 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 12:31:57,323 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 12:31:57,323 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 12:31:57,328 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 12:31:57,328 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 12:31:57,329 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 12:31:57,329 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 12:31:57,330 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 12:31:57,331 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 12:31:57,331 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 12:31:57,333 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 12:31:57,333 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 12:31:57,337 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 12:31:57,337 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 12:31:57,338 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 12:31:57,338 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 12:31:57,338 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 12:31:57,339 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 12:31:57,339 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 12:31:57,339 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 12:31:57,340 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 12:31:57,340 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 12:31:57,340 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 12:31:57,345 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 12:31:57,353 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 12:31:57,354 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 12:31:57,355 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 12:31:57,356 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 12:31:57,356 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 12:31:57,357 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 12:31:57,357 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 12:31:57,357 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 12:31:57,358 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 12:31:57,358 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 12:31:57,359 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 12:31:57,359 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 12:31:57,359 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 12:31:57,365 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 12:31:57,366 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 12:31:57,367 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 12:31:57,370 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 12:31:57,371 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 12:31:57,371 - WARNING - [EXTRACTION] No new files processed
+2026-04-27 12:31:57,375 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 12:31:57,390 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 12:31:58,120 - INFO - [CLEANING] Raw data loaded successfully. Shape: (66377, 42)
+2026-04-27 12:31:58,173 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 12:31:58,174 - INFO - [CLEANING] Column names cleaned
+2026-04-27 12:31:58,175 - INFO - [CLEANING] Columns renamed
+2026-04-27 12:31:58,395 - INFO - [CLEANING] Duplicates removed: 3010
+2026-04-27 12:31:58,420 - INFO - [CLEANING] Date column converted
+2026-04-27 12:31:58,699 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 12:31:58,727 - INFO - [CLEANING] Invalid time rows removed: 14500
+2026-04-27 12:31:58,744 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2221
+2026-04-27 12:32:01,259 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 12:32:01,925 - INFO - [CLEANING] Final cleaned data shape: (46646, 39)
+2026-04-27 12:32:03,211 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 12:32:03,231 - INFO - [LOADING] Starting data loading process
+2026-04-27 12:32:03,235 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 12:32:03,629 - INFO - [LOADING] Data loaded successfully. Shape: (46646, 39)
+2026-04-27 12:32:03,670 - INFO - [LOADING] Tracking file loaded
+2026-04-27 12:32:03,670 - INFO - [LOADING] Duplicate data detected, skipping
+2026-04-27 18:14:25,167 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 18:14:25,549 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 18:14:25,714 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 18:14:25,715 - WARNING - [EXTRACTION] Tracking file not found, starting fresh
+2026-04-27 18:14:28,374 - INFO - [EXTRACTION] Total files fetched: 60
+2026-04-27 18:14:28,374 - INFO - [EXTRACTION] Processing file: df_2025_12.csv
+2026-04-27 18:14:30,967 - INFO - [EXTRACTION] Processed file: df_2025_12.csv
+2026-04-27 18:14:30,983 - INFO - [EXTRACTION] Processing file: df_2025_01.csv
+2026-04-27 18:14:33,104 - INFO - [EXTRACTION] Processed file: df_2025_01.csv
+2026-04-27 18:14:33,104 - INFO - [EXTRACTION] Processing file: df_2025_06.csv
+2026-04-27 18:14:35,367 - INFO - [EXTRACTION] Processed file: df_2025_06.csv
+2026-04-27 18:14:35,367 - INFO - [EXTRACTION] Processing file: df_2024_11.csv
+2026-04-27 18:14:37,439 - INFO - [EXTRACTION] Processed file: df_2024_11.csv
+2026-04-27 18:14:37,439 - INFO - [EXTRACTION] Processing file: df_2024_08.csv
+2026-04-27 18:14:40,324 - INFO - [EXTRACTION] Processed file: df_2024_08.csv
+2026-04-27 18:14:40,325 - INFO - [EXTRACTION] Processing file: df_2025_04.csv
+2026-04-27 18:14:42,154 - INFO - [EXTRACTION] Processed file: df_2025_04.csv
+2026-04-27 18:14:42,155 - INFO - [EXTRACTION] Processing file: df_2025_07.csv
+2026-04-27 18:14:44,000 - INFO - [EXTRACTION] Processed file: df_2025_07.csv
+2026-04-27 18:14:44,000 - INFO - [EXTRACTION] Processing file: df_2025_10.csv
+2026-04-27 18:14:46,135 - INFO - [EXTRACTION] Processed file: df_2025_10.csv
+2026-04-27 18:14:46,135 - INFO - [EXTRACTION] Processing file: df_2024_12.csv
+2026-04-27 18:14:48,170 - INFO - [EXTRACTION] Processed file: df_2024_12.csv
+2026-04-27 18:14:48,170 - INFO - [EXTRACTION] Processing file: df_2025_09.csv
+2026-04-27 18:14:49,846 - INFO - [EXTRACTION] Processed file: df_2025_09.csv
+2026-04-27 18:14:49,846 - INFO - [EXTRACTION] Processing file: df_2025_08.csv
+2026-04-27 18:14:51,534 - INFO - [EXTRACTION] Processed file: df_2025_08.csv
+2026-04-27 18:14:51,534 - INFO - [EXTRACTION] Processing file: df_2025_03.csv
+2026-04-27 18:14:53,501 - INFO - [EXTRACTION] Processed file: df_2025_03.csv
+2026-04-27 18:14:53,501 - INFO - [EXTRACTION] Processing file: df_2025_05.csv
+2026-04-27 18:14:55,826 - INFO - [EXTRACTION] Processed file: df_2025_05.csv
+2026-04-27 18:14:55,826 - INFO - [EXTRACTION] Processing file: df_2024_10.csv
+2026-04-27 18:14:57,763 - INFO - [EXTRACTION] Processed file: df_2024_10.csv
+2026-04-27 18:14:57,779 - INFO - [EXTRACTION] Processing file: df_2024_09.csv
+2026-04-27 18:14:59,996 - INFO - [EXTRACTION] Processed file: df_2024_09.csv
+2026-04-27 18:14:59,996 - INFO - [EXTRACTION] Processing file: df_2025_02.csv
+2026-04-27 18:15:02,148 - INFO - [EXTRACTION] Processed file: df_2025_02.csv
+2026-04-27 18:15:02,148 - INFO - [EXTRACTION] Processing file: df_2024_07.csv
+2026-04-27 18:15:04,868 - INFO - [EXTRACTION] Processed file: df_2024_07.csv
+2026-04-27 18:15:04,869 - INFO - [EXTRACTION] Processing file: df_2025_11.csv
+2026-04-27 18:15:07,027 - INFO - [EXTRACTION] Processed file: df_2025_11.csv
+2026-04-27 18:15:07,027 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 18:15:09,209 - INFO - [EXTRACTION] Processed file: df_2024_06.csv
+2026-04-27 18:15:09,225 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 18:15:11,147 - INFO - [EXTRACTION] Processed file: df_2023_08.csv
+2026-04-27 18:15:11,147 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 18:15:13,067 - INFO - [EXTRACTION] Processed file: df_2024_03.csv
+2026-04-27 18:15:13,068 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 18:15:14,915 - INFO - [EXTRACTION] Processed file: df_2023_11.csv
+2026-04-27 18:15:14,917 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 18:15:16,794 - INFO - [EXTRACTION] Processed file: df_2024_02.csv
+2026-04-27 18:15:16,794 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 18:15:18,932 - INFO - [EXTRACTION] Processed file: df_2023_04.csv
+2026-04-27 18:15:18,932 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 18:15:20,727 - INFO - [EXTRACTION] Processed file: df_2023_02.csv
+2026-04-27 18:15:20,729 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 18:15:22,993 - INFO - [EXTRACTION] Processed file: df_2024_04.csv
+2026-04-27 18:15:22,993 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 18:15:24,841 - INFO - [EXTRACTION] Processed file: df_2023_10.csv
+2026-04-27 18:15:24,841 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 18:15:26,893 - INFO - [EXTRACTION] Processed file: df_2023_09.csv
+2026-04-27 18:15:26,893 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 18:15:28,794 - INFO - [EXTRACTION] Processed file: df_2023_12.csv
+2026-04-27 18:15:28,794 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 18:15:31,039 - INFO - [EXTRACTION] Processed file: df_2023_05.csv
+2026-04-27 18:15:31,039 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 18:15:33,009 - INFO - [EXTRACTION] Processed file: df_2023_06.csv
+2026-04-27 18:15:33,009 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 18:15:34,948 - INFO - [EXTRACTION] Processed file: df_2024_01.csv
+2026-04-27 18:15:34,948 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 18:15:37,010 - INFO - [EXTRACTION] Processed file: df_2024_05.csv
+2026-04-27 18:15:37,010 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 18:15:38,608 - INFO - [EXTRACTION] Processed file: df_2023_07.csv
+2026-04-27 18:15:38,608 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 18:15:40,610 - INFO - [EXTRACTION] Processed file: df_2023_03.csv
+2026-04-27 18:15:40,610 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 18:15:42,508 - INFO - [EXTRACTION] Processed file: df_2021_07.csv
+2026-04-27 18:15:42,509 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 18:15:44,762 - INFO - [EXTRACTION] Processed file: df_2022_11.csv
+2026-04-27 18:15:44,762 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 18:15:46,686 - INFO - [EXTRACTION] Processed file: df_2022_05.csv
+2026-04-27 18:15:46,686 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 18:15:48,714 - INFO - [EXTRACTION] Processed file: df_2022_03.csv
+2026-04-27 18:15:48,714 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 18:15:50,562 - INFO - [EXTRACTION] Processed file: df_2021_12.csv
+2026-04-27 18:15:50,562 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 18:15:52,392 - INFO - [EXTRACTION] Processed file: df_2022_01.csv
+2026-04-27 18:15:52,392 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 18:15:54,391 - INFO - [EXTRACTION] Processed file: df_2022_12.csv
+2026-04-27 18:15:54,391 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 18:15:56,257 - INFO - [EXTRACTION] Processed file: df_2022_08.csv
+2026-04-27 18:15:56,263 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 18:15:58,054 - INFO - [EXTRACTION] Processed file: df_2021_09.csv
+2026-04-27 18:15:58,054 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 18:16:01,710 - INFO - [EXTRACTION] Processed file: df_2022_06.csv
+2026-04-27 18:16:01,711 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 18:16:03,908 - INFO - [EXTRACTION] Processed file: df_2022_02.csv
+2026-04-27 18:16:03,908 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 18:16:05,713 - INFO - [EXTRACTION] Processed file: df_2021_11.csv
+2026-04-27 18:16:05,713 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 18:16:07,889 - INFO - [EXTRACTION] Processed file: df_2022_04.csv
+2026-04-27 18:16:07,890 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 18:16:09,838 - INFO - [EXTRACTION] Processed file: df_2021_08.csv
+2026-04-27 18:16:09,838 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 18:16:11,991 - INFO - [EXTRACTION] Processed file: df_2022_10.csv
+2026-04-27 18:16:11,991 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 18:16:14,252 - INFO - [EXTRACTION] Processed file: df_2021_05.csv
+2026-04-27 18:16:14,252 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 18:16:16,327 - INFO - [EXTRACTION] Processed file: df_2021_06.csv
+2026-04-27 18:16:16,327 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 18:16:18,192 - INFO - [EXTRACTION] Processed file: df_2022_09.csv
+2026-04-27 18:16:18,192 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 18:16:20,406 - INFO - [EXTRACTION] Processed file: df_2021_10.csv
+2026-04-27 18:16:20,406 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 18:16:22,406 - INFO - [EXTRACTION] Processed file: df_2023_01.csv
+2026-04-27 18:16:22,406 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 18:16:24,344 - INFO - [EXTRACTION] Processed file: df_2022_07.csv
+2026-04-27 18:16:24,344 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 18:16:26,912 - INFO - [EXTRACTION] Processed file: df_2021_03.csv
+2026-04-27 18:16:26,912 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 18:16:28,606 - INFO - [EXTRACTION] Processed file: df_2021_02.csv
+2026-04-27 18:16:28,606 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 18:16:30,974 - INFO - [EXTRACTION] Processed file: df_2021_01.csv
+2026-04-27 18:16:30,974 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 18:16:32,958 - INFO - [EXTRACTION] Processed file: df_2021_04.csv
+2026-04-27 18:16:33,009 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 18:16:35,342 - INFO - [EXTRACTION] Final shape: (76879, 42)
+2026-04-27 18:16:35,342 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:16:35,367 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 18:16:35,371 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:16:36,095 - INFO - [CLEANING] Raw data loaded successfully. Shape: (76879, 42)
+2026-04-27 18:16:36,166 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 18:16:36,169 - INFO - [CLEANING] Column names cleaned
+2026-04-27 18:16:36,170 - INFO - [CLEANING] Columns renamed
+2026-04-27 18:16:36,494 - INFO - [CLEANING] Duplicates removed: 3725
+2026-04-27 18:16:36,527 - INFO - [CLEANING] Date column converted
+2026-04-27 18:16:36,869 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 18:16:36,895 - INFO - [CLEANING] Invalid time rows removed: 16150
+2026-04-27 18:16:36,915 - INFO - [CLEANING] Rows filtered (>2hrs removed): 3317
+2026-04-27 18:16:39,851 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 18:16:40,651 - INFO - [CLEANING] Final cleaned data shape: (53687, 39)
+2026-04-27 18:16:42,507 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 18:16:42,511 - INFO - [LOADING] Starting data loading process
+2026-04-27 18:16:42,520 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 18:16:43,068 - INFO - [LOADING] Data loaded successfully. Shape: (53687, 39)
+2026-04-27 18:16:43,069 - WARNING - [LOADING] No tracking file found, starting fresh
+2026-04-27 18:16:43,222 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 18:17:15,288 - INFO - [LOADING] Data inserted successfully
+2026-04-27 18:17:15,295 - INFO - [LOADING] Tracking file updated
+2026-04-27 18:17:15,300 - INFO - [LOADING] MySQL connection closed
+2026-04-27 18:20:36,731 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 18:20:37,560 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 18:20:38,210 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 18:20:38,210 - WARNING - [EXTRACTION] Tracking file not found, starting fresh
+2026-04-27 18:20:40,822 - INFO - [EXTRACTION] Total files fetched: 36
+2026-04-27 18:20:40,822 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 18:20:42,893 - INFO - [EXTRACTION] Processed file: df_2023_08.csv
+2026-04-27 18:20:42,893 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 18:20:44,749 - INFO - [EXTRACTION] Processed file: df_2023_11.csv
+2026-04-27 18:20:44,749 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 18:20:46,838 - INFO - [EXTRACTION] Processed file: df_2023_04.csv
+2026-04-27 18:20:46,838 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 18:20:48,435 - INFO - [EXTRACTION] Processed file: df_2023_02.csv
+2026-04-27 18:20:48,437 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 18:20:50,358 - INFO - [EXTRACTION] Processed file: df_2023_10.csv
+2026-04-27 18:20:50,358 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 18:20:52,564 - INFO - [EXTRACTION] Processed file: df_2023_09.csv
+2026-04-27 18:20:52,565 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 18:20:54,221 - INFO - [EXTRACTION] Processed file: df_2023_12.csv
+2026-04-27 18:20:54,221 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 18:20:56,037 - INFO - [EXTRACTION] Processed file: df_2023_05.csv
+2026-04-27 18:20:56,037 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 18:20:57,684 - INFO - [EXTRACTION] Processed file: df_2023_06.csv
+2026-04-27 18:20:57,684 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 18:20:59,636 - INFO - [EXTRACTION] Processed file: df_2023_07.csv
+2026-04-27 18:20:59,636 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 18:21:02,006 - INFO - [EXTRACTION] Processed file: df_2023_03.csv
+2026-04-27 18:21:02,006 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 18:21:03,637 - INFO - [EXTRACTION] Processed file: df_2021_07.csv
+2026-04-27 18:21:03,637 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 18:21:05,917 - INFO - [EXTRACTION] Processed file: df_2022_11.csv
+2026-04-27 18:21:05,917 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 18:21:07,959 - INFO - [EXTRACTION] Processed file: df_2022_05.csv
+2026-04-27 18:21:07,959 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 18:21:09,882 - INFO - [EXTRACTION] Processed file: df_2022_03.csv
+2026-04-27 18:21:09,882 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 18:21:12,051 - INFO - [EXTRACTION] Processed file: df_2021_12.csv
+2026-04-27 18:21:12,067 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 18:21:13,852 - INFO - [EXTRACTION] Processed file: df_2022_01.csv
+2026-04-27 18:21:13,852 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 18:21:16,172 - INFO - [EXTRACTION] Processed file: df_2022_12.csv
+2026-04-27 18:21:16,172 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 18:21:18,157 - INFO - [EXTRACTION] Processed file: df_2022_08.csv
+2026-04-27 18:21:18,158 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 18:21:19,972 - INFO - [EXTRACTION] Processed file: df_2021_09.csv
+2026-04-27 18:21:19,972 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 18:21:21,635 - INFO - [EXTRACTION] Processed file: df_2022_06.csv
+2026-04-27 18:21:21,635 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 18:21:23,666 - INFO - [EXTRACTION] Processed file: df_2022_02.csv
+2026-04-27 18:21:23,666 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 18:21:25,250 - INFO - [EXTRACTION] Processed file: df_2021_11.csv
+2026-04-27 18:21:25,250 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 18:21:27,081 - INFO - [EXTRACTION] Processed file: df_2022_04.csv
+2026-04-27 18:21:27,097 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 18:21:28,978 - INFO - [EXTRACTION] Processed file: df_2021_08.csv
+2026-04-27 18:21:28,978 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 18:21:31,411 - INFO - [EXTRACTION] Processed file: df_2022_10.csv
+2026-04-27 18:21:31,411 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 18:21:33,481 - INFO - [EXTRACTION] Processed file: df_2021_05.csv
+2026-04-27 18:21:33,481 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 18:21:35,386 - INFO - [EXTRACTION] Processed file: df_2021_06.csv
+2026-04-27 18:21:35,402 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 18:21:37,314 - INFO - [EXTRACTION] Processed file: df_2022_09.csv
+2026-04-27 18:21:37,314 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 18:21:39,331 - INFO - [EXTRACTION] Processed file: df_2021_10.csv
+2026-04-27 18:21:39,332 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 18:21:41,142 - INFO - [EXTRACTION] Processed file: df_2023_01.csv
+2026-04-27 18:21:41,143 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 18:21:42,971 - INFO - [EXTRACTION] Processed file: df_2022_07.csv
+2026-04-27 18:21:42,971 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 18:21:44,754 - INFO - [EXTRACTION] Processed file: df_2021_03.csv
+2026-04-27 18:21:44,755 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 18:21:46,665 - INFO - [EXTRACTION] Processed file: df_2021_02.csv
+2026-04-27 18:21:46,665 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 18:21:48,571 - INFO - [EXTRACTION] Processed file: df_2021_01.csv
+2026-04-27 18:21:48,571 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 18:21:50,753 - INFO - [EXTRACTION] Processed file: df_2021_04.csv
+2026-04-27 18:21:50,817 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 18:21:52,587 - INFO - [EXTRACTION] Final shape: (38693, 42)
+2026-04-27 18:21:52,587 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:22:16,889 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 18:22:16,905 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:22:17,687 - INFO - [CLEANING] Raw data loaded successfully. Shape: (38693, 42)
+2026-04-27 18:22:17,786 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 18:22:17,786 - INFO - [CLEANING] Column names cleaned
+2026-04-27 18:22:17,786 - INFO - [CLEANING] Columns renamed
+2026-04-27 18:22:18,025 - INFO - [CLEANING] Duplicates removed: 2258
+2026-04-27 18:22:18,160 - INFO - [CLEANING] Date column converted
+2026-04-27 18:22:18,979 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 18:22:18,994 - INFO - [CLEANING] Invalid time rows removed: 5695
+2026-04-27 18:22:19,116 - INFO - [CLEANING] Rows filtered (>2hrs removed): 2592
+2026-04-27 18:22:26,531 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 18:22:26,962 - INFO - [CLEANING] Final cleaned data shape: (28148, 39)
+2026-04-27 18:22:27,916 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 18:22:45,917 - INFO - [LOADING] Starting data loading process
+2026-04-27 18:22:45,917 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 18:22:46,271 - INFO - [LOADING] Data loaded successfully. Shape: (28148, 39)
+2026-04-27 18:22:46,271 - WARNING - [LOADING] No tracking file found, starting fresh
+2026-04-27 18:22:46,426 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 18:23:03,163 - INFO - [LOADING] Data inserted successfully
+2026-04-27 18:23:03,163 - INFO - [LOADING] Tracking file updated
+2026-04-27 18:23:03,179 - INFO - [LOADING] MySQL connection closed
+2026-04-27 18:46:14,817 - INFO - [EXTRACTION] -> Starting data extraction process
+2026-04-27 18:46:15,527 - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-04-27 18:46:15,591 - INFO - [EXTRACTION] Connected to Google Drive successfully
+2026-04-27 18:46:15,727 - INFO - [EXTRACTION] Tracking file loaded
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Total files fetched: 42
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Processing file: df_2022_05.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Skipped already processed: df_2022_05.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Processing file: df_2023_08.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Skipped already processed: df_2023_08.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Processing file: df_2023_11.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Skipped already processed: df_2023_11.csv
+2026-04-27 18:46:18,189 - INFO - [EXTRACTION] Processing file: df_2024_05.csv
+2026-04-27 18:46:20,743 - INFO - [EXTRACTION] Processed file: df_2024_05.csv
+2026-04-27 18:46:20,755 - INFO - [EXTRACTION] Processing file: df_2024_03.csv
+2026-04-27 18:46:23,849 - INFO - [EXTRACTION] Processed file: df_2024_03.csv
+2026-04-27 18:46:23,896 - INFO - [EXTRACTION] Processing file: df_2024_06.csv
+2026-04-27 18:46:25,606 - INFO - [EXTRACTION] Processed file: df_2024_06.csv
+2026-04-27 18:46:25,606 - INFO - [EXTRACTION] Processing file: df_2023_04.csv
+2026-04-27 18:46:25,606 - INFO - [EXTRACTION] Skipped already processed: df_2023_04.csv
+2026-04-27 18:46:25,606 - INFO - [EXTRACTION] Processing file: df_2023_02.csv
+2026-04-27 18:46:25,606 - INFO - [EXTRACTION] Skipped already processed: df_2023_02.csv
+2026-04-27 18:46:25,622 - INFO - [EXTRACTION] Processing file: df_2023_10.csv
+2026-04-27 18:46:25,622 - INFO - [EXTRACTION] Skipped already processed: df_2023_10.csv
+2026-04-27 18:46:25,623 - INFO - [EXTRACTION] Processing file: df_2023_09.csv
+2026-04-27 18:46:25,624 - INFO - [EXTRACTION] Skipped already processed: df_2023_09.csv
+2026-04-27 18:46:25,625 - INFO - [EXTRACTION] Processing file: df_2023_12.csv
+2026-04-27 18:46:25,625 - INFO - [EXTRACTION] Skipped already processed: df_2023_12.csv
+2026-04-27 18:46:25,625 - INFO - [EXTRACTION] Processing file: df_2023_05.csv
+2026-04-27 18:46:25,625 - INFO - [EXTRACTION] Skipped already processed: df_2023_05.csv
+2026-04-27 18:46:25,628 - INFO - [EXTRACTION] Processing file: df_2023_06.csv
+2026-04-27 18:46:25,629 - INFO - [EXTRACTION] Skipped already processed: df_2023_06.csv
+2026-04-27 18:46:25,632 - INFO - [EXTRACTION] Processing file: df_2024_04.csv
+2026-04-27 18:46:27,480 - INFO - [EXTRACTION] Processed file: df_2024_04.csv
+2026-04-27 18:46:27,480 - INFO - [EXTRACTION] Processing file: df_2024_01.csv
+2026-04-27 18:46:29,480 - INFO - [EXTRACTION] Processed file: df_2024_01.csv
+2026-04-27 18:46:29,480 - INFO - [EXTRACTION] Processing file: df_2024_02.csv
+2026-04-27 18:46:31,301 - INFO - [EXTRACTION] Processed file: df_2024_02.csv
+2026-04-27 18:46:31,302 - INFO - [EXTRACTION] Processing file: df_2023_07.csv
+2026-04-27 18:46:31,303 - INFO - [EXTRACTION] Skipped already processed: df_2023_07.csv
+2026-04-27 18:46:31,303 - INFO - [EXTRACTION] Processing file: df_2023_03.csv
+2026-04-27 18:46:31,304 - INFO - [EXTRACTION] Skipped already processed: df_2023_03.csv
+2026-04-27 18:46:31,304 - INFO - [EXTRACTION] Processing file: df_2021_07.csv
+2026-04-27 18:46:31,304 - INFO - [EXTRACTION] Skipped already processed: df_2021_07.csv
+2026-04-27 18:46:31,305 - INFO - [EXTRACTION] Processing file: df_2022_11.csv
+2026-04-27 18:46:31,305 - INFO - [EXTRACTION] Skipped already processed: df_2022_11.csv
+2026-04-27 18:46:31,306 - INFO - [EXTRACTION] Processing file: df_2022_03.csv
+2026-04-27 18:46:31,306 - INFO - [EXTRACTION] Skipped already processed: df_2022_03.csv
+2026-04-27 18:46:31,307 - INFO - [EXTRACTION] Processing file: df_2021_12.csv
+2026-04-27 18:46:31,308 - INFO - [EXTRACTION] Skipped already processed: df_2021_12.csv
+2026-04-27 18:46:31,308 - INFO - [EXTRACTION] Processing file: df_2022_01.csv
+2026-04-27 18:46:31,309 - INFO - [EXTRACTION] Skipped already processed: df_2022_01.csv
+2026-04-27 18:46:31,310 - INFO - [EXTRACTION] Processing file: df_2022_12.csv
+2026-04-27 18:46:31,310 - INFO - [EXTRACTION] Skipped already processed: df_2022_12.csv
+2026-04-27 18:46:31,311 - INFO - [EXTRACTION] Processing file: df_2022_08.csv
+2026-04-27 18:46:31,312 - INFO - [EXTRACTION] Skipped already processed: df_2022_08.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2021_09.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2021_09.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2022_06.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2022_06.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2022_02.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2022_02.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2021_11.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2021_11.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2022_04.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2022_04.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2021_08.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2021_08.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2022_10.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2022_10.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2021_05.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2021_05.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2021_06.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Skipped already processed: df_2021_06.csv
+2026-04-27 18:46:31,314 - INFO - [EXTRACTION] Processing file: df_2022_09.csv
+2026-04-27 18:46:31,331 - INFO - [EXTRACTION] Skipped already processed: df_2022_09.csv
+2026-04-27 18:46:31,332 - INFO - [EXTRACTION] Processing file: df_2021_10.csv
+2026-04-27 18:46:31,332 - INFO - [EXTRACTION] Skipped already processed: df_2021_10.csv
+2026-04-27 18:46:31,333 - INFO - [EXTRACTION] Processing file: df_2023_01.csv
+2026-04-27 18:46:31,333 - INFO - [EXTRACTION] Skipped already processed: df_2023_01.csv
+2026-04-27 18:46:31,334 - INFO - [EXTRACTION] Processing file: df_2022_07.csv
+2026-04-27 18:46:31,334 - INFO - [EXTRACTION] Skipped already processed: df_2022_07.csv
+2026-04-27 18:46:31,335 - INFO - [EXTRACTION] Processing file: df_2021_03.csv
+2026-04-27 18:46:31,335 - INFO - [EXTRACTION] Skipped already processed: df_2021_03.csv
+2026-04-27 18:46:31,336 - INFO - [EXTRACTION] Processing file: df_2021_02.csv
+2026-04-27 18:46:31,336 - INFO - [EXTRACTION] Skipped already processed: df_2021_02.csv
+2026-04-27 18:46:31,337 - INFO - [EXTRACTION] Processing file: df_2021_01.csv
+2026-04-27 18:46:31,337 - INFO - [EXTRACTION] Skipped already processed: df_2021_01.csv
+2026-04-27 18:46:31,337 - INFO - [EXTRACTION] Processing file: df_2021_04.csv
+2026-04-27 18:46:31,338 - INFO - [EXTRACTION] Skipped already processed: df_2021_04.csv
+2026-04-27 18:46:31,364 - INFO - [EXTRACTION] Files combined successfully
+2026-04-27 18:46:31,758 - INFO - [EXTRACTION] Final shape: (12314, 42)
+2026-04-27 18:46:31,758 - INFO - [EXTRACTION] Saved to: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:46:31,793 - INFO - [CLEANING] -> Starting data cleaning process
+2026-04-27 18:46:31,834 - INFO - [CLEANING] Reading raw data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\combined_data_raw.csv
+2026-04-27 18:46:32,046 - INFO - [CLEANING] Raw data loaded successfully. Shape: (12314, 42)
+2026-04-27 18:46:32,325 - INFO - [CLEANING] Dropped unnecessary columns
+2026-04-27 18:46:32,327 - INFO - [CLEANING] Column names cleaned
+2026-04-27 18:46:32,333 - INFO - [CLEANING] Columns renamed
+2026-04-27 18:46:32,459 - INFO - [CLEANING] Duplicates removed: 342
+2026-04-27 18:46:32,538 - INFO - [CLEANING] Date column converted
+2026-04-27 18:46:32,648 - INFO - [CLEANING] Time columns converted to timedelta
+2026-04-27 18:46:32,673 - INFO - [CLEANING] Invalid time rows removed: 2244
+2026-04-27 18:46:32,699 - INFO - [CLEANING] Rows filtered (>2hrs removed): 356
+2026-04-27 18:46:33,268 - INFO - [CLEANING] Time columns formatted for MySQL
+2026-04-27 18:46:33,404 - INFO - [CLEANING] Final cleaned data shape: (9372, 39)
+2026-04-27 18:46:33,662 - INFO - [CLEANING] Clean data saved at: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\data\clean_data.csv
+2026-04-27 18:46:33,662 - INFO - [LOADING] Starting data loading process
+2026-04-27 18:46:33,681 - INFO - [LOADING] Reading clean data from: D:\Data Analytics\PROJECTS\Food_Data_Analysis\Fetch_data_google_drive\Data\clean_data.csv
+2026-04-27 18:46:33,800 - INFO - [LOADING] Data loaded successfully. Shape: (9372, 39)
+2026-04-27 18:46:33,873 - INFO - [LOADING] Tracking file loaded
+2026-04-27 18:46:33,980 - INFO - [LOADING] Connected to MySQL successfully
+2026-04-27 18:46:36,820 - INFO - [LOADING] Data inserted successfully
+2026-04-27 18:46:36,833 - INFO - [LOADING] Tracking file updated
+2026-04-27 18:46:36,835 - INFO - [LOADING] MySQL connection closed
