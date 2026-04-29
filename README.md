@@ -92,7 +92,7 @@ This project provides a **fully automated solution** to solve the above challeng
 # 🔄 Step 1: Power Automate Workflow (Data Ingestion)
 
 <p align="center">
-  <img src="Docs/power_automate_flow.png" width="800"/>
+  <img src="Docs/Power Automate Architecuture.png" width="800"/>
 </p>
 
 ### 💡 Simple Explanation
