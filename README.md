@@ -1,14 +1,14 @@
 # 🚀 End-to-End Automated Hotel Data Pipeline with Incremental Load & Power BI
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=28&center=true&vCenter=true&width=900&lines=Analytical+Engineering+Project;End-to-End+Data+Pipeline;Incremental+Ingestion+and+Loading;Automation+with+Power+Automate;Data+Engineering+Project">
+  <img src="https://readme-typing-svg.herokuapp.com?color=2ECC71&size=28&center=true&vCenter=true&width=900&lines=Analytical+Engineering+Project;End-to-End+Data+Pipeline;Incremental+Ingestion+and+Loading;Automation+with+Power+Automate;Data+Engineering+Project">
 </p>
 
 ---
 
 ## 📌 Problem Statement
 
-A newly launched **🟢 food delivery app startup in Mumbai** is rapidly growing but facing operational and financial constraints.
+A newly launched **🟢🟢 food delivery app startup in Mumbai 🟢🟢** is rapidly growing but facing operational and financial constraints.
 Being a startup, the company wants to **minimize infrastructure costs** and avoid investing heavily in cloud platforms, while still building a **scalable and automated data system**.
 
 ---
