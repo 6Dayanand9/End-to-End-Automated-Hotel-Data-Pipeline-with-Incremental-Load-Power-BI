@@ -6,6 +6,53 @@
 
 ---
 
+## 📌 Problem Statement
+
+A newly launched **food delivery startup in Mumbai** is rapidly growing but facing operational and financial constraints.
+
+Being a startup, the company wants to **minimize infrastructure costs** and avoid investing heavily in cloud platforms, while still building a **scalable and automated data system**.
+
+---
+
+### 🚧 Business Challenges
+
+* 📩 Order data is received via emails from multiple restaurant partners
+* 🧾 Manual downloading and handling of files increases time and errors
+* 📉 High number of **order cancellations** with no clear reason
+* 📊 No proper system to track business performance and KPIs
+* 💸 Limited budget → needs a **low-cost optimized solution**
+
+---
+
+### ⚙️ Technical Challenges
+
+* No centralized data storage
+* No automation for data ingestion
+* Repetitive manual work
+* Risk of duplicate data loading
+* No structured pipeline for processing
+
+---
+
+### 🎯 Business Requirements
+
+The company needs a solution that can:
+
+* Automate data collection from emails
+* Store data without expensive cloud usage
+* Process and clean data efficiently
+* Load only new data (incremental processing)
+* Provide insights into **order cancellations**
+* Build dashboards for overall performance monitoring
+
+---
+
+### 💡 Objective
+
+> Build a **low-cost, automated, and scalable data pipeline** that converts raw email data into meaningful business insights and helps identify reasons behind order cancellations.
+
+---
+
 ## 🛠️ Tech Stack
 
 <p align="center">
@@ -16,12 +63,13 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="50"/>
 
 <img src="https://img.icons8.com/color/48/microsoft-outlook-2019.png" height="50"/>
-<img src="https://img.icons8.com/color/48/power-bi-2021.png" height="48" alt="Power BI"/>
+<img src="https://img.icons8.com/color/48/power-bi-2021.png" height="48"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" height="50"/>
 
-<img src="https://img.icons8.com/fluency/48/cloud-link.png" height="50" alt="Data Gateway"/>
+<img src="https://img.icons8.com/fluency/48/cloud-link.png" height="50"/>
 
-<img src="https://img.icons8.com/color/48/streamlit.png" height="48" alt="Streamlit"/>
+<img src="https://img.icons8.com/color/48/streamlit.png" height="48"/>
+
 </p>
 
 <p align="center">
@@ -32,14 +80,13 @@ Python | Pandas | MySQL | GCP | Outlook | Power BI | Power Automate | Gateway | 
 
 ## 🧠 Project Overview
 
-This project is a **fully automated data pipeline**.
+This project provides a **fully automated solution** to solve the above challenges.
 
-👉 Data comes from emails
-👉 Gets processed using Python
+👉 Data is collected from emails
+👉 Automatically stored in Google Drive
+👉 Processed using Python (ETL)
 👉 Stored in MySQL
 👉 Visualized in Power BI
-
-Everything works automatically — no manual work needed.
 
 ---
 
@@ -54,8 +101,8 @@ Everything works automatically — no manual work needed.
 * When a new email arrives in Outlook
 * Power Automate checks the subject
 * If subject contains **`food_data24`**
-* It takes the CSV file from email
-* Saves it automatically into **Google Drive**
+* It extracts the CSV attachment
+* Saves it automatically into Google Drive
 
 ---
 
@@ -63,10 +110,10 @@ Everything works automatically — no manual work needed.
 
 * **Trigger** → Email received
 * **Condition** → Subject contains `food_data24`
-* **Loop** → Goes through attachments
+* **Loop** → Iterate through attachments
 * **Action** → Upload file to Google Drive
 
-👉 No manual download needed
+👉 This removes manual file handling completely
 
 ---
 
@@ -78,42 +125,45 @@ Everything works automatically — no manual work needed.
 
 ## 📌 What is ETL?
 
-* **Extract** → Get data
-* **Transform** → Clean data
+* **Extract** → Collect data
+* **Transform** → Clean & prepare data
 * **Load** → Store data
 
 ---
 
 ## 🔹 Extraction
 
-* Fetch data from Google Drive
-* Skip already processed files
-* Combine all files
+* Connects to Google Drive
+* Fetches only new files
+* Tracks processed files
+* Combines data
 
 ---
 
 ## 🔹 Cleaning
 
-* Fix column names
-* Remove duplicates
-* Validate data
-* Create `date_id`
+* Standardizes column names
+* Removes duplicates
+* Fixes date & time formats
+* Filters invalid records
+* Creates `date_id`
 
 ---
 
 ## 🔹 Incremental Loading
 
-* Check if data already exists
-* Load only new data
-* Skip duplicates
+* Generates data signature
+* Checks for duplicate data
+* Loads only new records into MySQL
+* Updates tracking file
 
 ---
 
 ### 🧠 Why this matters
 
-✔ Faster processing
-✔ No duplicate data
-✔ Efficient pipeline
+✔ Prevents duplicate data
+✔ Improves performance
+✔ Saves processing time
 
 ---
 
@@ -127,13 +177,13 @@ Everything works automatically — no manual work needed.
 
 ## 🔄 Full Flow (Simple)
 
-1. Email arrives
-2. Power Automate saves file
-3. Google Drive stores data
-4. Python ETL processes data
-5. MySQL stores data
-6. Power BI shows insights
-7. Streamlit monitors pipeline
+1. 📩 Email arrives
+2. ⚙️ Power Automate processes file
+3. ☁️ Google Drive stores raw data
+4. 🐍 Python ETL processes data
+5. 🗄️ MySQL stores structured data
+6. 📊 Power BI generates dashboards
+7. 📡 Streamlit monitors pipeline
 
 ---
 
@@ -142,8 +192,20 @@ Everything works automatically — no manual work needed.
 👉 Email → Drive → ETL → MySQL → Power BI
 
 ✔ Fully automated
-✔ Incremental loading
-✔ Scalable
+✔ Cost-efficient
+✔ Incremental processing
+✔ Scalable architecture
+✔ Data-driven insights
+
+---
+
+## 🎯 Business Impact
+
+* Reduced manual effort
+* Lower operational cost
+* Faster data processing
+* Improved decision-making
+* Identified root causes of order cancellations
 
 ---
 
