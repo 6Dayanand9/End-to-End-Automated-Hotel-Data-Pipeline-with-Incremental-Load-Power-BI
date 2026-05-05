@@ -208,6 +208,23 @@ This project provides a **fully automated solution** to solve the above challeng
 
 ---
 
+# 🔴 Problem Statement 2: Order Cancellation Analysis
+
+The Food Delivery App is experiencing a **20.48% order cancellation rate** across **18,526 total orders**, resulting in **3,794 lost transactions**.
+
+The business needs to:
+
+👉 Identify **root causes of cancellations**, including:
+
+- ⚙️ Operational issues (late deliveries)  
+- 🍽️ Product issues (pricing, wrong items)  
+- 🚚 Service issues (delivery partner behavior)  
+- 👤 Behavioral issues (abusive customers)
+
+👉 Take **targeted actions** to reduce cancellations by **at least 30% in the next quarter**
+
+---
+
 ## ⭐ Support
 
 If you found this project useful, give it a ⭐ on GitHub!
